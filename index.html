@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Star Wars</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="lateral-menu">
+            <img src="./assets/img/logo.png" alt="">
+            <div class="menu-items">
+                <ul>
+                    <li>
+                        <img src="./assets/img/dashboard.svg" alt="">
+                        <p>Dashboard</p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/personagens.svg" alt="">
+                        <p>Personagens</p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/planetas.svg" alt="">
+                        <p>Planetas e Luas</p>
+                    </li>
+                    <li>
+                        <img src="./assets/img/nave.svg" alt="">
+                        <p>Naves espaciais</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="settings">
+                <i data-feather="settings"></i>
+                <p>Configurações</p>
+            </div>
+        </aside>
+        <div class="content">
+            <div class="cards-header">
+                <div class="card card-small">
+                    <div class="card-content">
+                        <div class="card-info">
+                            <p>Personagens</p>
+                            <span id="personagens"></span>
+                        </div>
+                        <img src="./assets/img/personagens-black.svg" alt="">
+                    </div>
+                </div>
+                <div class="card card-large">
+                    <div class="card-container">
+                        <div class="card-content">
+                            <div class="card-info">
+                                <p>Luas</p>
+                                <span id="luas"></span>
+                            </div>
+                            <img src="./assets/img/luas-black.svg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-info">
+                                <p>Planetas</p>
+                                <span id="planetas"></span>
+                            </div>
+                            <img src="./assets/img/planetas-black.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-small">
+                    <div class="card-content">
+                        <div class="card-info">
+                            <p>Naves</p>
+                            <span id="naves"></span>
+                        </div>
+                        <img src="./assets/img/nave-black.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-info">
+                <div class="table">
+                    <h2>Últimos filmes</h2>
+                    <span>Saiba os últimos lançamentos da marca</span>
+                    <table id="filmsTable">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Estreia</th>
+                                <th>Diretor</th>
+                                <th>Episódios</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <div class="chart">
+                    <div id="piechart" style="width: 350px; height: 450px"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        feather.replace()
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
